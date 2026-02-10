@@ -300,10 +300,10 @@ export default function ForgotPasswordScreen() {
             <p className="text-xs text-muted-foreground">
               For assistance, contact IT Support at{" "}
               <a
-                href="mailto:support@urbandevelopment.gov.ng"
+                href="mailto:it-support@federalministryofhousing&urbandevelopment.gov.ng"
                 className="text-green-600 hover:underline"
               >
-                support@urbandevelopment.gov.ng
+               it-support@federalministryofhousing&urbandevelopment.gov.ng
               </a>
             </p>
             <p className="text-xs text-muted-foreground">

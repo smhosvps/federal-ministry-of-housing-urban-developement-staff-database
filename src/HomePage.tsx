@@ -386,7 +386,7 @@ export default function LandingPage() {
                   />
                 </div>
                 <div>
-                  <h1 className="text-lg font-bold text-green-700">FMWUD</h1>
+                  <h1 className="text-lg font-bold text-green-700">FMHUD</h1>
                   <p className="text-xs text-gray-500">Staff Database</p>
                 </div>
               </div>
@@ -490,11 +490,10 @@ export default function LandingPage() {
           {/* Mobile Menu */}
           <div
             id="mobile-menu"
-            className={`md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg transform transition-all duration-300 ease-in-out ${
-              isMobileMenuOpen
+            className={`md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg transform transition-all duration-300 ease-in-out ${isMobileMenuOpen
                 ? "translate-y-0 opacity-100 visible"
                 : "-translate-y-4 opacity-0 invisible"
-            }`}
+              }`}
           >
             <div className="max-w-7xl mx-auto px-4 py-6">
               {isUserLoading ? (
@@ -615,11 +614,11 @@ export default function LandingPage() {
                 <div className="space-y-4">
                   <div className="mb-6">
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Welcome to FMWUD Portal
+                      Welcome to FMHUD Portal
                     </h3>
                     <p className="text-gray-600 text-sm">
                       Secure staff management system for Federal Ministry of
-                      Works and Urban Development
+                      Housing and Urban Development
                     </p>
                   </div>
 
@@ -934,7 +933,7 @@ export default function LandingPage() {
                 Features
               </h3>
               <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-               See our comprehensive process for our staff data enrollment.
+                See our comprehensive process for our staff data enrollment.
               </p>
             </div>
 
@@ -1021,7 +1020,7 @@ export default function LandingPage() {
                     <span className="font-semibold text-green-700">
                       Official Government System:
                     </span>{" "}
-                    Trusted by the Federal Ministry of Works and Urban
+                    Trusted by the Federal Ministry of Housing and Urban
                     Development for secure staff management.
                   </p>
                   <p className="animate-fade-in-up delay-200 text-sm sm:text-base">
@@ -1331,7 +1330,7 @@ export default function LandingPage() {
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-white tracking-tight">
-                          FMWUD
+                          FMHUD
                         </h3>
                         <p className="text-emerald-100/70 text-sm font-medium">
                           Staff Database System
@@ -1442,7 +1441,7 @@ export default function LandingPage() {
                         href="mailto:support@fmwud.gov.ng"
                         className="text-emerald-100/80 hover:text-white text-sm font-medium transition-colors"
                       >
-                        support@fmwud.gov.ng
+                        support@fmhud.gov.ng
                       </a>
                     </li>
                     <li className="flex items-center gap-3 group">

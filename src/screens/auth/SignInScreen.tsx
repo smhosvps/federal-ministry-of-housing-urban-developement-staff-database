@@ -382,10 +382,10 @@ export default function SignInScreen() {
             <p className="text-xs text-muted-foreground">
               For login assistance, contact IT Support at{" "}
               <a
-                href="mailto:it-support@urbandevelopment.gov.ng"
+                href="mailto:it-support@federalministryofhousing&urbandevelopment.gov.ng"
                 className="text-green-600 hover:underline"
               >
-                it-support@urbandevelopment.gov.ng
+                it-support@federalministryofhousing&urbandevelopment.gov.ng
               </a>
             </p>
             <p className="text-xs text-muted-foreground">

@@ -117,21 +117,18 @@ export default function ResetPasswordScreen() {
         {/* Geometric Pattern */}
         <div className="absolute top-0 left-0 w-full h-full">
           <div
-            className={`absolute top-1/4 -left-8 w-80 h-80 rounded-full bg-gradient-to-r from-blue-200/20 to-indigo-200/20 blur-3xl transition-all duration-1000 ${
-              mounted
+            className={`absolute top-1/4 -left-8 w-80 h-80 rounded-full bg-gradient-to-r from-blue-200/20 to-indigo-200/20 blur-3xl transition-all duration-1000 ${mounted
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-20 opacity-0"
-            }`}
+              }`}
           />
           <div
-            className={`absolute bottom-1/3 -right-8 w-96 h-96 rounded-full bg-gradient-to-l from-indigo-200/20 to-purple-200/20 blur-3xl transition-all duration-1000 delay-300 ${
-              mounted ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
-            }`}
+            className={`absolute bottom-1/3 -right-8 w-96 h-96 rounded-full bg-gradient-to-l from-indigo-200/20 to-purple-200/20 blur-3xl transition-all duration-1000 delay-300 ${mounted ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
+              }`}
           />
           <div
-            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-blue-100/10 to-indigo-100/10 blur-3xl transition-all duration-1000 delay-500 ${
-              mounted ? "scale-100 opacity-100" : "scale-50 opacity-0"
-            }`}
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-blue-100/10 to-indigo-100/10 blur-3xl transition-all duration-1000 delay-500 ${mounted ? "scale-100 opacity-100" : "scale-50 opacity-0"
+              }`}
           />
         </div>
 
@@ -149,23 +146,20 @@ export default function ResetPasswordScreen() {
 
         {/* Floating Icons */}
         <div
-          className={`absolute top-32 left-12 text-blue-300/30 transition-all duration-700 delay-700 ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`absolute top-32 left-12 text-blue-300/30 transition-all duration-700 delay-700 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <Lock size={48} />
         </div>
         <div
-          className={`absolute top-52 right-20 text-indigo-300/30 transition-all duration-700 delay-900 ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`absolute top-52 right-20 text-indigo-300/30 transition-all duration-700 delay-900 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <Key size={56} />
         </div>
         <div
-          className={`absolute bottom-40 left-32 text-purple-300/30 transition-all duration-700 delay-1100 ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`absolute bottom-40 left-32 text-purple-300/30 transition-all duration-700 delay-1100 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <Shield size={52} />
         </div>
@@ -198,7 +192,7 @@ export default function ResetPasswordScreen() {
               </div>
               <div className="text-center">
                 <h1 className="text-2xl sm:text-3xl mb-5 font-bold bg-gradient-to-r from-green-700 to-green-800 bg-clip-text text-transparent">
-                Federal Minsitry of Housing and Urban Development
+                  Federal Minsitry of Housing and Urban Development
                 </h1>
               </div>
             </div>
@@ -290,9 +284,8 @@ export default function ResetPasswordScreen() {
                     }}
                     placeholder="Enter 6-digit OTP"
                     maxLength={6}
-                    className={`w-full pl-12 pr-4 py-3 rounded-xl border ${
-                      errors.otp ? "border-red-300" : "border-gray-200"
-                    } bg-white/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-3 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200`}
+                    className={`w-full pl-12 pr-4 py-3 rounded-xl border ${errors.otp ? "border-red-300" : "border-gray-200"
+                      } bg-white/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-3 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200`}
                   />
                 </div>
                 {errors.otp && (
@@ -325,9 +318,8 @@ export default function ResetPasswordScreen() {
                         setErrors((prev) => ({ ...prev, password: "" }));
                     }}
                     placeholder="Create a strong password"
-                    className={`w-full pl-12 pr-12 py-3 rounded-xl border ${
-                      errors.password ? "border-red-300" : "border-gray-200"
-                    } bg-white/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-3 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200`}
+                    className={`w-full pl-12 pr-12 py-3 rounded-xl border ${errors.password ? "border-red-300" : "border-gray-200"
+                      } bg-white/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-3 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200`}
                   />
                   <button
                     type="button"
@@ -374,11 +366,10 @@ export default function ResetPasswordScreen() {
                         setErrors((prev) => ({ ...prev, confirmPassword: "" }));
                     }}
                     placeholder="Re-enter your password"
-                    className={`w-full pl-12 pr-12 py-3 rounded-xl border ${
-                      errors.confirmPassword
+                    className={`w-full pl-12 pr-12 py-3 rounded-xl border ${errors.confirmPassword
                         ? "border-red-300"
                         : "border-gray-200"
-                    } bg-white/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-3 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200`}
+                      } bg-white/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-3 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200`}
                   />
                   <button
                     type="button"
@@ -457,14 +448,14 @@ export default function ResetPasswordScreen() {
             <p className="text-xs text-muted-foreground">
               For password recovery assistance, contact IT Support at{" "}
               <a
-                href="mailto:support@urbandevelopment.gov.ng"
+                href="mailto:it-support@federalministryofhousing&urbandevelopment.gov.ng"
                 className="text-green-600 hover:underline"
               >
-                support@urbandevelopment.gov.ng
+                it-support@federalministryofhousing&urbandevelopment.gov.ng
               </a>
             </p>
             <p className="text-xs text-muted-foreground">
-            Federal Minsitry of Housing and Urban Development • © {new Date().getFullYear()} All
+              Federal Minsitry of Housing and Urban Development • © {new Date().getFullYear()} All
               rights reserved
             </p>
           </div>

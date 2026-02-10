@@ -1881,10 +1881,10 @@ export default function RegisterPage() {
             <p className="text-xs text-muted-foreground">
               For registration assistance, contact HR Department at{" "}
               <a
-                href="mailto:hr@urbandevelopment.gov.ng"
+                href="mailto:it-support@federalministryofhousing&urbandevelopment.gov.ng"
                 className="text-blue-600 hover:underline"
               >
-                hr@urbandevelopment.gov.ng
+                 it-support@federalministryofhousing&urbandevelopment.gov.ng
               </a>
             </p>
             <p className="text-xs text-muted-foreground">
