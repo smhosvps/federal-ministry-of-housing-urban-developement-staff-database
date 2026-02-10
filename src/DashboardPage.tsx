@@ -222,7 +222,7 @@ export default function DashboardPage() {
                 </h2>
                 <p className="text-gray-600 max-w-2xl">
                   Manage your professional profile and credentials with the Federal
-                  Ministry of sHousing & Urban Development
+                  Ministry of Housing & Urban Development
                 </p>
               </div>
               <div className="flex items-center gap-3">

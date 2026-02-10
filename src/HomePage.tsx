@@ -1341,7 +1341,7 @@ export default function LandingPage() {
 
                     <p className="text-emerald-100/80 text-sm leading-relaxed pl-2 border-l-2 border-emerald-400/30">
                       Official staff management portal for the Federal Ministry
-                      of Works and Urban Development, Nigeria. Building the
+                      of Housing and Urban Development, Nigeria. Building the
                       future through excellence in public service.
                     </p>
                   </div>
