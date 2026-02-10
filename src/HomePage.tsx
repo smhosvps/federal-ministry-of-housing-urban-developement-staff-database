@@ -373,6 +373,35 @@ export default function LandingPage() {
           />
         )}
 
+             {/* Animated Background Elements */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        {/* Geometric Pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: `radial-gradient(circle at 25% 25%, #187339 2px, transparent 2px),
+                              radial-gradient(circle at 75% 75%, #187339 2px, transparent 2px)`,
+            backgroundSize: "60px 60px",
+          }}
+        ></div>
+
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-green-100/10 to-emerald-100/5 rounded-full blur-3xl animate-float-shape-1"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tr from-green-200/5 to-emerald-200/3 rounded-full blur-3xl animate-float-shape-2"></div>
+
+        {/* Grid Lines */}
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, #187339 1px, transparent 1px),
+              linear-gradient(to bottom, #187339 1px, transparent 1px)
+            `,
+            backgroundSize: "50px 50px",
+          }}
+        ></div>
+      </div>
+
         {/* Navigation */}
         <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -927,6 +956,7 @@ export default function LandingPage() {
 
         {/* Features Section */}
         <section className="relative z-10 py-12 sm:py-20 lg:py-32 bg-white">
+          
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10 sm:mb-16 animate-fade-in-down">
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green-700 mb-3 sm:mb-4">
