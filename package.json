@@ -2,12 +2,15 @@
   "name": "booking",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "module",  
+  "homepage": "https://urbandevelopment/smhosvps/urbandevelopment-web",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.9",
@@ -43,6 +46,7 @@
     "emoji-picker-react": "^4.12.0",
     "flutterwave-react-v3": "^1.3.2",
     "framer-motion": "^11.7.0",
+    "gh-pages": "^6.3.0",
     "json-2-csv": "^5.5.9",
     "jspdf": "^3.0.0",
     "jspdf-autotable": "^5.0.2",
