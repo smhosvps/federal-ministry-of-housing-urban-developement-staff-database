@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://smhosvps.github.io/federal-ministry-of-housing-urban-developement-staff-database/",
+  "homepage": "https://smhosvps.github.io/federal-ministry-of-housing-urban-developement-staff-database",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

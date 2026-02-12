@@ -22,5 +22,5 @@ export default defineConfig({
   build: {
     sourcemap: false,
   },
-  base: '/federal-ministry-of-housing-urban-developement-staff-database/',
+  base: '/federal-ministry-of-housing-urban-developement-staff-database',
 })
