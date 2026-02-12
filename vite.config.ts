@@ -19,5 +19,8 @@ export default defineConfig({
     open: true,
     host: true
   },
+  build: {
+    sourcemap: false,
+  },
   base: '/federal-ministry-of-housing-urban-developement-staff-database/',
 })
