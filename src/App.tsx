@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NotFoundScreen from "./screens/NotFoundScreen";
@@ -14,7 +14,7 @@ import AdminRoute from "./redux/features/auth/AdminRoutes";
 import { setCredentials } from "./redux/features/auth/authSlice";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { useGetUserQuery } from "./redux/api/apiSlice"; 
+import { useGetUserQuery } from "./redux/api/apiSlice";
 import { Loader } from "lucide-react";
 import PhotoVerificationPage from "./screens/PhotoVerificationPage";
 import UserProfilePage from "./screens/UserProfilePage";
@@ -47,10 +47,10 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         {/* <Header /> */}
         <Routes>
-          <Route path="*" element={<NotFoundScreen />} />
+
           <Route path="/" element={<HomePage />} />
 
           <Route element={<IsNotLoginAuth />}>
@@ -76,15 +76,16 @@ function App() {
               element={<UpdatePassword />}
             />
             <Route path="/dashboard/edit-profile" element={<UpdateUserProfile />} />
-             <Route path="/dashboard/notifications" element={<NotificationPage />} />
+            <Route path="/dashboard/notifications" element={<NotificationPage />} />
           </Route>
 
           <Route element={<AdminRoute allowedRoles={["Super Admin", "staff", "admin"]} />}>
             <Route path="/admin-dashboard" element={<ManageUsersAdminPage />} />
             <Route path="/admin/users/:id" element={<UserDetailPage />} />
           </Route>
+          <Route path="*" element={<NotFoundScreen />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <ToastContainer
         position="top-center"
         autoClose={5000}

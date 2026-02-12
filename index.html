@@ -17,6 +17,17 @@
   <link rel="mask-icon" href="/mask-icon.svg" color="#FFFFFF">
   <meta name="theme-color" content="#ffffff">
   <title>Federal Minsitry of Housing and Urban Development</title> 
+  <script>
+    // Single Page Apps for GitHub Pages
+    // https://github.com/rafgraph/spa-github-pages
+    (function() {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 </head>
 
 <body>
